@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="left-image"></div>
+    <div class="form-container">
+        <form action="">
+
+            <table>
+
+                <tr>
+                    <td colspan="3" style="width:100%">
+                        <h3>Sign up</h3>
+                        <small> By continuing, you agree to our User Agreement and Privacy Policy.</small>
+                    </td>
+                </tr>
+                <!-- Name -->
+                <tr>
+                    <td>
+                        <div class="input-text">
+                            <input id="id1" type="text" pattern="^[A-Za-z]+[0-9]*.*" title="must be Alphabetical."
+                                required>
+                            <div class="placeholder-text">Full Name</div>
+                        </div>
+                        <div class="validation-msg">
+
+                        </div>
+
+                    </td>
+                    <!-- Username -->
+
+                    <td>
+                        <div class="input-text">
+                            <input type="text" minlength="4" pattern="^[a-zA-Z]\w*"
+                                title="must be 4-10 lowercase characters" required>
+                            <div class="placeholder-text">Username</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- email -->
+                <tr>
+                    <td>
+                        <div class="input-text">
+                            <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9.]*@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"
+                                form="novalidationform" required>
+                            <div class="placeholder-text" style="width: 100%;">Email</div>
+                        </div>
+                        <!-- Please fix your email to continue. -->
+                    </td>
+                    <!-- password -->
+
+                <tr>
+                    <td>
+                        <div class="input-text">
+                            <input type="password" minlength="6"
+                                title="Minimum one uppercase, one lowercase, 1 special character, and 1 number. Length should be minimum 6"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).*" required>
+                            <div class="placeholder-text">Password</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-text">
+                            <input type="password" minlength="6" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).*"
+                                title="Password length minimum 6 characters." required>
+                            <div class="placeholder-text">Confirm Password</div>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <!-- Username -->
+                <tr>
+                    <td>
+                        <div class="input-text">
+                            <input type="tel" maxlength="15" pattern="[\d]{5}-[\d]{7}-[\d]{1}"
+                                title="Format not matched. i-e 12345-1234567-1" required>
+                            <div class="placeholder-text">CNIC</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-text">
+                            <input type="tel" pattern="03[0-9]{2}-\d{3}-\d{4}"
+                                title="Format not matched. i-e 0312-123-1234" maxlength="13" required>
+                            <div class="placeholder-text">Phone</div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="input-select">
+                            <select name="province" id="province" required>
+                                <option value="select-province" selected disabled>Province</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="KPK">KPK</option>
+                                <option value="Sindh">Sindh</option>
+                                <option value="Balochistan">Balochistan</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-select">
+                            <select name="District" id="district" required>
+                                <option value="select-district" selected disabled>District</option>
+                                <option value="abbottabadd">Abbottabad</option>
+                                <option value="haripur">Haripur</option>
+                                <option value="swat">Swat</option>
+                                <option value="haripur">Haripur</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="input-select">
+                            <select name="Tehsil" id="tehsil" required>
+                                <option value="select-tehsil" selected disabled>Tehsil</option>
+                                <option value="Punjab">Khanpur</option>
+                                <option value="KPK">Haripur</option>
+                                <option value="Sindh">Ghazi</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <div class=" input-text" style="width:100%">
+                            <input type="text" style="width:100%;  background-position: 870px;" required>
+                            <div class="placeholder-text">Address</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class=" input-button">
+                            <input type="Submit" required>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+
+    <!-- script -->
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>
